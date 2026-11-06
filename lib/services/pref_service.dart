@@ -17,6 +17,8 @@ class PrefService {
     return PrefService._(prefs);
   }
 
+  Set<String> get debugKeys => _prefs.getKeys();
+
   // ---------- Penghitung buka aplikasi ----------
   int get openCount => _prefs.getInt(_kOpenCount) ?? 0;
 
